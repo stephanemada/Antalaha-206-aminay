@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>home</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #87CEEB; /* Bleu ciel */
+    padding: 20px;
+  }
+
+  .btn {
+    display: inline-block;
+    padding: 40px 90px;
+    margin: 6px;
+    color: white;
+    font-size: 50px;
+    text-decoration: none;
+    border-radius: 10px;
+    background-size: 300% 300%;
+    animation: colorMove 3s ease infinite;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+
+  .btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+  }
+
+  .btn:active {
+    transform: scale(0.95);
+  }
+
+  .btn-rouge {
+    background-image: linear-gradient(270deg, #ff0000, #ff6b6b, #ff0000);
+  }
+
+  .btn-bleu {
+    background-image: linear-gradient(270deg, #1877f2, #4dabf7, #1877f2);
+  }
+
+  .btn-vert {
+    background-image: linear-gradient(270deg, #25d366, #6fffa8, #25d366);
+  }
+
+  .btn-jaune {
+    background-image: linear-gradient(270deg, #fbc531, #ffeaa7, #fbc531);
+    color: #000;
+  }
+
+  @keyframes colorMove {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+</style>
+</head>
+
+<body>
+<h1>Safidio @liste aby ambany io raha tianao</h1>
+
+<a href="rouge.html" class="btn btn-rouge">FILAZANA MEKY (URGENT)</a>
+<a href="bleu.html"  class="btn btn-bleu">TRANO AFONDRO</a>
+<a href="jaune.html" class="btn btn-vert">NAMANA</a>
+<a href="noire.html" class="btn btn-jaune">VAROTRA SAMIHAFA</a>
+  <a href="vert" class="btn btn-vert">ASA</a>
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>index</title>
+
+<style>
+  body {
+    margin: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #0f3c4c, #1e5968);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: white;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  /* Soratra ambony logo */
+  .title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    animation: fadeDown 1.2s ease forwards;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    opacity: 0;
+    margin-bottom: 20px;
+    animation: fadeDown 1.2s ease forwards;
+    animation-delay: 0.4s;
+  }
+
+  /* Logo */
+  .logo {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    opacity: 0;
+    animation: zoomIn 1.4s ease forwards;
+    animation-delay: 0.8s;
+  }
+
+  /* Soratra ambanin'ny logo */
+  .footer-text {
+    margin-top: 16px;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 16px;
+    opacity: 0;
+    animation: fadeUp 1.2s ease forwards;
+    animation-delay: 1.4s;
+    line-height: 1.4;
+  }
+
+  /* ===== ANIMATIONS ===== */
+
+  @keyframes fadeDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes zoomIn {
+    from {
+      opacity: 0;
+      transform: scale(0.85);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+</style>
+
+<script>
+  // Redirection aorian'ny 6 secondes
+  setTimeout(function () {
+    window.location.href = "home.html";
+  }, 7000);
+</script>
+
+</head>
+<body>
+
+<div class="title">Tongasoa</div>
+<div class="subtitle">Antalaha aminay ahitanao raha maro</div>
+
+<img src="croix rouge plage.JPG" alt="Logo original" class="logo">
+
+<div class="footer-text">
+  HO ANAO IZAY TE HIARA HIASA AMINAY<br>
+  stephanemadagascar28@gmail.com<br>
+  0324958862
+</div>
+
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Présentation</title>
+
+<style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+        font-family: Arial, sans-serif;
+        color: white;
+        overflow: hidden;
+    }
+
+    .container {
+        text-align: center;
+        animation: fadeZoom 4s ease-in-out forwards;
+    }
+
+    .logo {
+        width: 120px;
+        animation: logoMove 2s ease-in-out;
+    }
+
+    h1 {
+        margin-top: 20px;
+        font-size: 36px;
+        animation: textSlide 2s ease-in-out;
+    }
+
+    p {
+        font-size: 18px;
+        opacity: 0.8;
+        animation: textFade 3s ease-in-out;
+    }
+
+    @keyframes fadeZoom {
+        0% { opacity: 0; transform: scale(0.7); }
+        30% { opacity: 1; transform: scale(1); }
+        100% { opacity: 1; }
+    }
+
+    @keyframes logoMove {
+        0% { transform: translateY(-40px); opacity: 0; }
+        100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes textSlide {
+        0% { transform: translateX(-50px); opacity: 0; }
+        100% { transform: translateX(0); opacity: 1; }
+    }
+
+    @keyframes textFade {
+        0% { opacity: 0; }
+        100% { opacity: 0.8; }
+    }
+</style>
+
+<script>
+    // Mivadika pejy aorian'ny 4 secondes
+    setTimeout(function () {
+        window.location.href = "page2.html";
+    }, 4000);
+</script>
+</head>
+
+<body>
+    <div class="container">
+        <img src="croix rouge plage.JPG" alt="Logo" class="logo">
+        <h1>Bienvenue</h1>
+        <p>Présentation animée en HTML</p>
+    </div>
+</body>
+</html>
